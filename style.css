@@ -1,0 +1,149 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.clear-float::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+p{
+    color: gray;
+}
+
+/* Header part */
+.menu-part ul {
+	text-align: right;
+	margin-bottom: 0;
+}
+.menu-part ul li {
+    display: inline-block;
+    margin: 20px;
+}
+.menu-part ul li a {
+    text-decoration: none;
+    color: #0062d5;
+}
+.logo-part a {
+	text-decoration: none;
+	/* color: color: #0062d5; */
+	color: #0062d5;
+	font-size: 22px;
+	margin: 15px 0;
+	display: inline-block;
+}
+
+/* Section1 */
+.section-1 {
+	text-align: center;
+	background: url(2.jpg) no-repeat;
+	background-size: cover;
+	background-position: center 20%;
+	color: white;
+	padding: 300px;
+	position: relative;
+	z-index: 1;
+	background-attachment: fixed;
+}
+.section-1::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .6);
+	z-index: -1;
+}
+
+/* Section2 */
+.section-2 {
+	padding: 50px;
+}
+
+.sec3-left img {
+    width: 25%;
+    float: left;
+}
+.sec3-left ul {
+    float: left;
+    padding: 35px;
+}
+.sec3-left ul li {
+    padding: 5px;
+}
+.sec3-left-bottom p {
+	margin-top: 30px;
+	width: 90%;
+}
+.google-map {
+	margin-top: 150px;
+}
+.google-map iframe {
+	width: 100%;
+}
+.sec3-about h2 {
+	font-weight: 400;
+	margin-bottom: 15px;
+	font-size: 25px;
+}
+.sec3-about .sec3-para2 {
+	margin: 20px 0;
+}
+.sec3-about h3 {
+	font-size: 23px;
+	font-weight: 400;
+	line-height: 32px;
+	margin-bottom: 150px;
+}
+
+.form-part label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+.form-part input {
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 7px 15px;
+	/* border-color: g; */
+	border: 1px solid #cdc8c8;
+	border-radius: 5px;
+	outline: none;
+}
+.form-part textarea {
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	border-color: g;
+	border: 1px solid #cdc8c8;
+	border-radius: 5px;
+}
+.form-part a {
+	margin-top: 30px;
+	background-color: #5bc0de;
+	border: none;
+}
+.form-part a:hover{
+    background-color: #3d97b3;
+}
+
+
+/* Footer part */
+.footer-part p {
+	color: white;
+}
+.footer-part a{
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+.footer-part .design {
+	margin-top: 5px;
+}
